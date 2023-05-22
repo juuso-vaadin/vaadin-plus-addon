@@ -1,0 +1,24 @@
+/* Theme: Hide Label */
+
+[theme~="hide-label"][has-label] {
+    padding: var(--lumo-space-xs) 0;
+}
+
+[theme~="hide-label"][has-label]::before {
+    margin-top: 0;
+}
+
+[theme~='hide-label']::part(input-field) {
+    position: relative;
+}
+
+[theme~="hide-label"]::part(label) {
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
