@@ -1,0 +1,47 @@
+vaadin-tabsheet[theme~="contained"] {
+    border-radius: 0;
+    background-color: var(--lumo-base-color);
+}
+
+vaadin-tabsheet[theme~="contained"]::part(tabs-container) {
+    box-shadow: none;
+}
+
+vaadin-tabs[theme~="contained"] vaadin-tab::before,
+vaadin-tabs[theme~="contained"] vaadin-tab::after {
+    content: none;
+    display: none;
+    transform: none;
+}
+
+vaadin-tabs[theme~="contained"] {
+    background-color: var(--lumo-contrast-5pct);
+}
+
+vaadin-tabs[theme~="contained"] vaadin-tab[selected] {
+    background-color: var(--lumo-base-color);
+    color: var(--lumo-body-text-color);
+    position: relative;
+    overflow: visible;
+}
+
+vaadin-tabs[theme~="contained"] vaadin-tab[selected]::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background-color: var(--lumo-primary-color);
+    border-radius: 0;
+}
+
+vaadin-tabs[theme~="contained"] vaadin-tab[active]:not([selected]) {
+    color: var(--lumo-body-text-color);
+}
+
+vaadin-tabs[theme~="contained"][orientation='horizontal']::part(tabs) {
+    margin: 0;
+    overflow-x: visible;
+}

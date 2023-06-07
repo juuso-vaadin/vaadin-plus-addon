@@ -73,6 +73,7 @@ public class MainLayout extends AppLayout {
 				new MenuItemInfo("Radio Buttons", RadioButtonsView.class),
 				new MenuItemInfo("Seqmented Controls", SegmentedControlsView.class),
 				new MenuItemInfo("Input Groups", InputGroupsView.class),
+				new MenuItemInfo("Tabs", TabsView.class),
 		};
 	}
 

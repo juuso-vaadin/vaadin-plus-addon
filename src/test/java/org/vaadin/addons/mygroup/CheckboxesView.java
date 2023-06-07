@@ -16,7 +16,7 @@ import com.vaadin.flow.theme.lumo.LumoUtility;
 import java.util.stream.Collectors;
 
 @PageTitle("Checkboxes")
-@Route(value = "checkboxes", layout = MainLayout.class)
+@Route(value = "", layout = MainLayout.class)
 public class CheckboxesView extends Main {
 
 	public static final String LOREM_IPSUM = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" +
